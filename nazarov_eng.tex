@@ -1,0 +1,652 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=1.5in,top=1.2in,right=1in,bottom=1.2in]{geometry} % Document margins
+\usepackage{url}
+\usepackage[numbers]{natbib}
+
+\name{Ivan Nazarov} % Your name
+% \address{123 Broadway \\ City, State 12345} % Your address
+% \address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
+% \address{+7 (915)~$\cdot$~317~$\cdot$~2225 \\ ivannz@yandex.ru} % Your phone number and email
+\address{
+    +7 (915)~$\cdot$~317~$\cdot$~22~25 \\ \url{https://github.com/ivannz} \\ ivan.nazarov@skolkovotech.ru
+} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Education}
+\textbf{Skolkovo Institue of Science and Technology, CDISE} \hfill \emph{November 2020} \\
+PhD. studies, Applied Mathematics, Computer Science and Engineering.
+
+\medskip
+\textbf{National Research University Higher School of Economics} \hfill \emph{June 2016} \\
+MSc., Applied Mathematics and Information Science. % \\
+Fields: Data science
+
+\medskip
+\textbf{National Research University Higher School of Economics} \hfill \emph{June 2007} \\ 
+BSc., Economics. % \\
+Fields: Mathematical methods of analysis in Economics \\
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Project and Academic Experience}
+
+\begin{rSubsection}{Artificial Intelligence Research Institute}{September 2021 - Present}{Research Fellow}{Moscow}
+    \item \textbf{Reinforcement Learning Research 2021/09-present}
+    Research related RL for the project on manager-worker communications for goal-conditioned
+    policies. Topics included adaptive computation in deep networks with applications to
+    hierarchical RL, skill discovery and learning hierarchical policies in RL.
+    % fully intrinsic self-supervised rewards in RL?
+    \begin{itemize}
+        \item presentations and discussions on the topics of hierarchical RL, options discovery,
+        planning and MCTS, inverse dynamics models for feature representation and intrinsic motivation
+        \item proposing hypotheses and experimental setups for testing existing approaches
+        and combinations thereof on Minigrid, ATARI, MiniHack and Nethack environments
+        \item implementation and development of tools,%
+            \footnote{\url{https://github.com/ivannz/plyr}}
+        small frameworks,%
+            \footnote{\url{https://github.com/ivannz/nle_toolbox}}
+        and recurrent transformer architectures (Nethack), vector-quantized VAEs for
+        manager-worker communication (ATARI, Minigrid)
+    \end{itemize}
+
+    \item \textbf{NetHack challenge 2021/09-2021/11}
+    Active participation and development of the winning solution ``Raph'' for the NetHack
+    Challenge at the the 2021 NeurIPS competition track. The solution featured a skill-based
+    reinforcement learning agent, which used options approach to hierarchical RL and combined
+    both algorithmic and neural policies.
+    \begin{itemize}
+        \item implementation of diagnostic toolbox for debugging the solution%
+            \footnote{\url{https://github.com/ivannz/nle_toolbox}}
+        \item in-depth study of the Nethack's inner-workings, peculiarities and documentation
+        in order to simplify the agent's interface and propose features for the neural policy
+        \item optimization of the algorithmic backend of the solution, including data representation
+        and shortest path algorithms
+        \item writing a short report, which outlines the structure of the solution and
+        the motivation for the use of hardcoded algorithmic policies
+    \end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Sberbank, AI Lab}{December 2020 - September 2021}{Senior ML Researcher}{Moscow}
+    \item \textbf{Technical research report 2020/12-2021/09}
+    Research and methodological support and consultation for developing a method for remote
+    diagnostics of respiratory illnesses using audio recordings of respiratory sounds (breath
+    and cough)
+    \begin{itemize}
+        \item development of bootstrap-based method for evaluation of performance in
+        counterfactual setting  % noise and environmental sound contamination in the input data
+        \item preparation of extensive literature review of machine learning of audio data
+        at the intersection with medical applications
+        \item writing and editing introduction, borader impact, review, and methodology sections 
+        of the paper; improving the testing protocol, data augmentation and processing
+    \end{itemize}
+\end{rSubsection}
+
+\begin{rSubsection}{Skoltech, CDISE}{September 2016 - November 2020}{ML Researcher / PhD. student}{Moscow}
+    \item \textbf{Project customers} include \emph{Sberbank, Huawei, Bosch, Datadvance, and Airbus}.
+
+    \bigskip
+    \item \textbf{Research paper 2020/08 - present}:
+    Research into deep neural network pruning based on the second-order information.
+    Derivation and study of fast procedures for forward and backward greedy pruning based
+    on the Optimal Brain Surgeon and related methods.
+    \begin{itemize}
+        \item Full cycle design, validation and implementation of the method with supporting
+        functionality for implicit Hessian-vector access%
+            \footnote{\url{https://github.com/ivannz/BrainSurgeon}}
+
+        \item Extensive research into the sub-optimality guarantees for approximate solutions
+        of combinatorial search problems and their relation to the proposed procedure
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Research paper 2020/05 - present}:
+    Research into ways to extend the Deep Weight Prior beyond independent kernel-slice assumption%
+        \footnote{\url{https://arxiv.org/abs/1810.06943}}
+    \begin{itemize}
+        \item Development and documentation of the core architecture for the full pipeline for
+        experimentation and reporting
+        
+        \item Numerically stable implementation of the Tensor-Ring Induced Prior%
+            \footnote{\url{https://arxiv.org/abs/1910.13148}}
+        
+        \item Extensive experimentation with the implicit priors and gradient estimators
+        needed them (IWAE, SGVB)
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Research paper 2019/11 - 2020/06}:
+    Research into Bayesian methods for sparsification of complex-valued neural networks.
+    Implementation of complex-valued neural networks extension to pytorch, with seamless
+    integration onto existing experimental pipelines. \begin{itemize}
+        \item Full cycle design, validation and implementation of the complex-valued tensor
+        extension to pytorch%
+            \footnote{\url{https://github.com/ivannz/cplxmodule}}
+        
+        \item Extension of variational dropout and automatic relevance determination to
+        complex-valued neural networks based on original research
+        
+        \item Development of automated experimentation framework for the experiments, and
+        extensive large scale experimentation and validation of the proposed technique
+        
+        \item Findings published in the proceedings of and presented at ICML 2020
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2019/04 - 2019/09}:
+    Research and experimentation on neural Digital Signal Predistortion for wireless radio
+    frequency transmitters. Implementation of a custom torch-based large scale experimentation framework
+    for rapid prototyping, fast verification and unified reporting. \begin{itemize}
+        \item Data investigation and analysis with large scale experiments
+        
+        \item Research, development and analysis of alternative neural architectures
+        
+        \item Presentation of the findings to the customer, research outcome negotiations
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2018/09 - 2018/12}:
+    Development of a matrix factorization library with temporal regularization for demand
+    and inventory forecasting. \begin{itemize}
+        \item Design, validation and implementation of various forecasting approaches
+        
+        \item Data investigation, visualization and analysis
+        
+        \item Preparation of relevant sections of the final report
+        
+        \item Presentation of findings at various events (BigData Conference 2018)
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2018/05 - 2018/06}:
+    Development of a library for inductive matrix completion with group-sparse regularizer.
+    \begin{itemize}
+        \item Design, prototyping and implementation of a sparse group lasso regularized
+        matrix completion library with side-channel information
+        
+        \item Preparation of various section of a scientific paper detailing the algorithm
+        and the findings on practical biomedical tasks
+        
+        \item Publication of the findings in the Journal of \emph{Computational Mathematics
+        and Mathematical Physics}
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2018/04 - 2018/07}:
+    Feasibility study and research for medium term oil price forecasting with advanced machine
+    learning. \begin{itemize}
+        \item negotiations on the structure and content of the news stream from Thomson Reuters
+        for neural event embedding model
+        
+        \item collection and selection of economic data for forecasting of multivariate oil
+        price time series
+        
+        \item team and task scope management
+        
+        \item preparation of the final report and executive summary, and presentation
+        of the findings
+        
+        \item extensive experimentation and forecasting using recurrent neural networks, classical
+        time series and machine learning models
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2017/11 - 2017/12}:
+    Estimation of the effects from the publication of weekly report from the US Department
+    of Energy and contents therein on the intraday oil price futures dynamics.
+    \begin{itemize}
+        \item statement, design and implementation of the optimization problem for
+        estimation of sparse event effects
+        
+        \item conducting numerical experiments
+        
+        \item composing the final report and presentation to the customer
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2017/09 - 2017/11}:
+    Project on detection of anomalous road surface conditions on a spatially distributed
+    dataset of micro-meteorological data. \begin{itemize}
+        \item derivation and prototyping of an algorithm for decentralized machine
+        learning for detection of thin ice layer on the surface of a tarmac
+        
+        \item development of routines for computing and extensive numerical experimentation
+        with the goal to study the sensitivity to hyper-parameters and effects on detection
+        properties
+        
+        \item preparation of the report with comparison of the decentralized solution
+        against independent and centralized models in terms of prediction performance,
+        computational resources and network traffic volumes
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2016/11 - 2017/05}: 
+    Design and validation of anticipatory binary signals for an early warning system
+    in aerospace industry.
+    %
+    Chief responsibilities: \begin{itemize}
+        \item design and implementation of data processing pipeline on small scale
+        AWS EC2 clusters over S3 data storage
+        
+        \item upgrade and optimization of the library module for selection of
+        predictive binary signals
+        
+        \item data mining and feature analysis, design and execution of computational
+        experiments
+        
+        \item presenting the results of data analysis and selected predictive signals
+        to the client
+    \end{itemize}
+
+    % \medskip
+    % \item \textbf{PhD studies 2016/09 - November 2020}:
+    % PhD. student in Computer Science and Engineering. Research interests:
+    % \begin{itemize}
+    %     \item machine and statistical learning;
+    %     \item numerical algorithms and large scale optimization.
+    % \end{itemize}
+
+\end{rSubsection}
+
+%------------------------------------------------
+\bigskip
+\begin{rSubsection}{IITP RAS, laboratory 10}{September 2015 - September 2016}{Researcher Intern}{Moscow}
+    \item \textbf{Project 2015/08 - 2016/09}: development of a statistical library
+    for predictive maintenance and early warning systems with applications to
+    aerospace industry.
+    %
+    Chief responsibilities: \begin{itemize}
+        \item analysis and solution of applied data analytic cases necessary to
+        secure \textit{TRL5} certification approval
+
+        \item refactoring, design and development of the architecture and alternative
+        interface of the library
+
+        \item improvement and efficient implementation of select ML algorithms in
+        the library
+
+        \item preparing and conducting a comprehensive tutorial session on the usage
+        of the library for the client
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Project 2015/11 -- 2016/06}: Collaboration on a library for long
+    term economic forecasting and simulation for efficient economic planning in coal
+    mining industry.
+    %
+    Chief responsibilities: \begin{itemize}
+        \item analysis, development and testing of the macroeconomic model
+
+        \item design and implementation of an R package for the library
+
+        \item preparation of comprehensive user manual for the package
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Auxiliary projects}: Collaboration in research of the applicability
+    of the state-of-the-art online learning algorithms to optimal portfolio composition
+    problem for exchange traded funds. Responsibilities: \begin{itemize}
+        \item implement online learning and expert aggregation algorithms
+
+        \item design and conduct numerical simulation experiments
+
+        \item prepare comprehensive reports on comparison study results
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Master thesis} on \textit{``Conformalized Multidimensional Linear
+    Modelling and Anomaly Detection''} -- a general distribution-free method for
+    constructing confidence sets with valid statistical guarantees. Obtained evidence
+    in favour of conformal confidence regions for kernel ridge regression in applied
+    tasks, in part due to less restrictive assumptions.
+    %
+    Achieved objectives: \begin{itemize}
+        \item derived new formulae needed for a computationally efficient conformal
+        prediction procedure for kernel ridge regression
+
+        \item conducted an exhaustive simulation study aimed at comparing conformal
+        confidence regions over nonlinear regression models against Bayesian intervals
+        of Gaussian Process Regression
+
+        \item proposed a non-parametric method for model selection on conformal predictions
+        and a novel approach to novelty detection in unsupervised setting
+
+        \item research paper published in proceedings of ICMLA 2016
+    \end{itemize}
+\end{rSubsection}
+
+\end{rSection}
+
+%------------------------------------------------
+\bigskip
+{
+\scriptsize
+
+% renewed commands apply only within the scope of the curly brackets! nice!
+\renewcommand{\clearpage}{}
+
+\renewcommand{\refname}{Published or Accepted Papers}
+\makeatletter
+\renewcommand{\bibsection}{%
+   \section*{\refname%
+            \@mkboth{\MakeUppercase{\refname}}{\MakeUppercase{\refname}}%
+   }
+}
+\makeatother
+
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Nazarov and Burnaev(2020)]{nazarov_bayesian_2020} 
+I.~Nazarov and E.~Burnaev.
+\newblock Bayesian {Sparsification} of {Deep} {C}-valued {Networks}.
+% \newblock In \emph{International {Conference} on {Machine} {Learning}}, volume
+%   119. PMLR, 2020.
+\newblock In proc. of the 37th \emph{International {Conference} on {Machine} {Learning}},
+  vol.~119, 7230-7242. PMLR 2020.
+
+\bibitem[Nazarov et~al.(2021)Nazarov, Shirokikh, Burkina, Fedonin, and
+  Panov]{nazarov_sparse_2021} 
+I.~Nazarov, B.~Shirokikh, M.~Burkina, G.~Fedonin, and M.~Panov.
+\newblock Sparse {Group} {Inductive} {Matrix} {Completion}.
+\newblock \emph{Computational Mathematics and Mathematical Physics},
+  61\penalty0 (2), 2021.
+% \newblock arXiv: 1804.10653.
+
+\bibitem[Burnaev and Nazarov(2016)]{burnaev_conformalized_2016} 
+E.~Burnaev and I.~Nazarov.
+\newblock Conformalized {Kernel} {Ridge} {Regression}.
+\newblock In \emph{2016 15th {IEEE} {International} {Conference} on {Machine}
+  {Learning} and {Applications} ({ICMLA})}, pages 45--52, Dec. 2016.
+\newblock \doi{10.1109/ICMLA.2016.0017}.
+
+\bibitem[Volkhonskiy et~al.(2020)Volkhonskiy, Nazarov, and
+  Burnaev]{volkhonskiy_steganographic_2020} 
+D.~Volkhonskiy, I.~Nazarov, and E.~Burnaev.
+\newblock Steganographic generative adversarial networks.
+\newblock In \emph{Twelfth {International} {Conference} on {Machine} {Vision}
+  ({ICMV} 2019)}, volume 11433, page 114333M. International Society for Optics
+  and Photonics, Jan. 2020.
+\newblock \doi{10.1117/12.2559429}.
+
+\bibitem[Sosnina et~al.(2020)Sosnina, Sosnin, Nikitina, Nazarov, Osolodkin, and
+  Fedorov]{sosnina_recommender_2020} 
+E.~A. Sosnina, S.~Sosnin, A.~A. Nikitina, I.~Nazarov, D.~I. Osolodkin, and
+  M.~V. Fedorov.
+\newblock Recommender {Systems} in {Antiviral} {Drug} {Discovery}.
+\newblock \emph{ACS Omega}, 5\penalty0 (25):\penalty0 15039--15051, June 2020.
+\newblock ISSN 2470-1343.
+\newblock \doi{10.1021/acsomega.0c00857}.
+\newblock Publisher: American Chemical Society.
+
+\bibitem[Rivera et~al.(2018)Rivera, Nazarov, and Burnaev]{rivera_towards_2018} 
+R.~Rivera, I.~Nazarov, and E.~Burnaev.
+\newblock Towards forecast techniques for business analysts of large commercial
+  data sets using matrix factorization methods.
+\newblock \emph{Journal of Physics: Conference Series}, 1117:\penalty0 012010,
+  Nov. 2018.
+\newblock ISSN 1742-6596.
+\newblock \doi{10.1088/1742-6596/1117/1/012010}.
+\newblock Publisher: IOP Publishing.
+
+\bibitem[Rivera-Castro et~al.(2019{\natexlab{a}})Rivera-Castro, Nazarov, Xiang,
+  Maksimov, Pletnev, and Burnaev]{rivera-castro_industry_2019} 
+R.~Rivera-Castro, I.~Nazarov, Y.~Xiang, I.~Maksimov, A.~Pletnev, and
+  E.~Burnaev.
+\newblock An {Industry} {Case} of {Large}-{Scale} {Demand} {Forecasting} of
+  {Hierarchical} {Components}.
+\newblock In \emph{2019 18th {IEEE} {International} {Conference} {On} {Machine}
+  {Learning} {And} {Applications} ({ICMLA})}, pages 134--139, Dec.
+  2019{\natexlab{a}}.
+\newblock \doi{10.1109/ICMLA.2019.00029}.
+
+\bibitem[Rivera-Castro et~al.(2019{\natexlab{b}})Rivera-Castro, Nazarov, Xiang,
+  Pletneev, Maksimov, and Burnaev]{rivera-castro_demand_2019} 
+R.~Rivera-Castro, I.~Nazarov, Y.~Xiang, A.~Pletneev, I.~Maksimov, and
+  E.~Burnaev.
+\newblock Demand {Forecasting} {Techniques} for {Build}-to-{Order} {Lean}
+  {Manufacturing} {Supply} {Chains}.
+\newblock In H.~Lu, H.~Tang, and Z.~Wang, editors, \emph{Advances in {Neural}
+  {Networks} – {ISNN} 2019}, Lecture {Notes} in {Computer} {Science}, pages
+  213--222, Cham, 2019{\natexlab{b}}. Springer International Publishing.
+\newblock ISBN 978-3-030-22796-8.
+\newblock \doi{10.1007/978-3-030-22796-8_23}.
+
+\bibitem[Rivera-Castro et~al.(2019{\natexlab{c}})Rivera-Castro, Pletnev,
+  Pilyugina, Diaz, Nazarov, Zhu, and
+  Burnaev]{rivera-castro_topology-based_2019} 
+R.~Rivera-Castro, A.~Pletnev, P.~Pilyugina, G.~Diaz, I.~Nazarov, W.~Zhu, and
+  E.~Burnaev.
+\newblock Topology-{Based} {Clusterwise} {Regression} for {User} {Segmentation}
+  and {Demand} {Forecasting}.
+\newblock In \emph{2019 {IEEE} {International} {Conference} on {Data} {Science}
+  and {Advanced} {Analytics} ({DSAA})}, pages 326--336, Oct.
+  2019{\natexlab{c}}.
+\newblock \doi{10.1109/DSAA.2019.00048}.
+
+\bibitem[Ishimtsev et~al.(2017)Ishimtsev, Bernstein, Burnaev, and
+  Nazarov]{ishimtsev_conformal_2017} 
+V.~Ishimtsev, A.~Bernstein, E.~Burnaev, and I.~Nazarov.
+\newblock Conformal \$k\$-{NN} {Anomaly} {Detector} for {Univariate} {Data}
+  {Streams}.
+\newblock In \emph{Conformal and {Probabilistic} {Prediction} and
+  {Applications}}, pages 213--227. PMLR, May 2017.
+\newblock ISSN: 2640-3498.
+
+\end{thebibliography}
+
+}
+
+\bigskip
+\begin{rSection}{Teaching Experience}
+    \item \textbf{Teaching 2020/04 - 2020/05}:
+    Preparing and delivering practical tutorials on the software engineering tools for the
+    course on Foundations of Data Science.
+    \begin{itemize}
+        \item Overcoming fear of Git version control and Github: overview of branch and
+        commit manipulation with exercises on the typical everyday pipeline%
+            \footnote{\url{https://github.com/ivannz/fds2020-git}}
+
+        \item Practical packaging in Python: setup script, package structure, and building
+        python extensions%
+            \footnote{\url{https://github.com/ivannz/fds2020-packaging}}
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Teaching 2019/08/26 - 2019/09/06}:
+    Volunteering and teaching at Machine Learning Summer School at Skoltech. Teaching
+    activities include preparing and delivering a practical seminar on Bayesian Neural
+    Networks, Uncertainty quantification and Active Learning
+        \footnote{\url{http://bdl101.ml/}}
+
+    \medskip
+    \item \textbf{Teaching 2019/06 - 2019/07}:
+    Preparation of a course on practical version control with Git, managing small-scale software
+    development, useful devops practices, and principle approaches to architecture and design for
+    software engineering tasks in machine learning and data science.
+
+    \medskip
+    \item \textbf{Teaching 2019/03}:
+    Preparation and teaching of three seminars covering the topics of classification and regression
+    for Machine Learning further education course for Sberbank.
+
+    \medskip
+    \item \textbf{Teaching 2018/07, 2018/11}:
+    % \item \textbf{Teaching 2018/07/22, 2018/11/19}:
+    Preparation and teaching of four seminars covering the topics of classification
+    (imbalanced and multi-class), anomaly detection and time series forecasting for
+    the staff of Gazprom Neft.
+
+    \medskip
+    \item \textbf{Teaching 2018/02 - 2018/04}:
+    Teaching assistant on ML2018 course. Chief responsibilities included:
+    \begin{itemize}
+        \item preparation, verification and proof-reading of study materials (homeworks, exams)
+        
+        \item organization and team management, course content validation, deadline management
+        
+        \item communication and consultation on projects, assignments and exams
+    \end{itemize}
+
+    \medskip
+    \item \textbf{Teaching 2017/12}:
+    % \item \textbf{Teaching 2017/12/24}:
+    Preparation of a practical seminar on classification and multiclass meta-algorithms
+    for extended education course on Machine Learning for Sberbank staff.
+
+    \medskip
+    \item \textbf{Teaching 2017/02 - 2017/04}:
+    Teaching assistant on ML2017 course. Responsibilities included grading the exam,
+    consulting students on projects, and preparation of four seminars: on ensemble
+    methods, on quadratic problems in support vector machines, and on elements of
+    statistical learning.
+
+\end{rSection}
+
+%------------------------------------------------
+\bigskip
+\begin{rSection}{Work Experience}
+
+\begin{rSubsection}{GlowByte Consulting}{May 2013 - August 2015}{Business analyst}{Moscow}
+    \item \textbf{Project 2014/03 - 2015/08}: design and implementation of business logic
+    for database objects for a data warehousing solution during the migration of the accounting
+    database and ledger of a top Russian bank to new corporate record management system
+
+    \medskip
+    \item \textbf{Project 2013/04 - 2014/02}: architect and lead developer of the statistical
+    computations module for market simulations within a software complex for monitoring the
+    financial market by the Central Bank of Russia
+\end{rSubsection}
+
+%------------------------------------------------
+\bigskip
+\begin{rSubsection}{the Institute for Financial Studies}{January 2010 - April 2013}{Junior Analyst}{Moscow}
+    \item Econometric studies, statistical estimation and design of mathematical
+    models, scenario analysis, forecasting, visualization of data, interpretation and
+    reporting of research results (in Eviews and R)
+
+    \item Preparation of regular analytic commentaries on the current macroeconomic
+    events
+
+    \item Industry studies and analysis of economic trends for informed executive
+    decision making
+
+    \item Participation in the project on energy economics: ``The present and the
+    future of Gazprom and strategy of Russia as a major international gas supplier''
+    (manuscript published under title ``Gazprom: An Energy Giant and its
+    Challenges in Europe'', ISBN-13 978-1137461094)
+
+    \medskip
+    \textbf{Prepared analytic materials} \begin{enumerate}
+        \item ``Transit of natural gas: the bargaining model'' (Application of game
+        theory to the issue of gas transit; ``Economics and Mathematical methods'',
+        Issue 4, October – December 2010);
+        
+        \item ``Application of the extreme value theory to evaluation of market risk'',
+        2010 (estimation of VAR and CVAR with GARCH-type models; for internal use);
+        
+        \item ``Exploration of latent volatility regimes in oil price dynamics'',
+        2011 (Application of Markov Switching Autoregressive model; for internal use);
+        
+        \item ``Skill of luck: performance of open-ended mutual funds in Russia'',
+        2012-2013 (estimation 4 factor CAPM model, and bootstrap simulation study;
+        for internal use);
+        
+        \item ``Index of Financial Stress (Russia)'', 2011-2012 (development of index's
+        structure and calculation methodology);
+        
+        \item A number of macroeconomic commentaries for the corporate website, 2010-2013
+        (``CBR can't handle the inflation'', ``Is the US going off the cliff?'' etc.);
+        
+        \item Shale gas in Pennsylvania, 2013 (Analysis of the current events and
+        trends of the local gas industry; for internal use);
+        
+        \item ``Russian gas industry'' and ``Russian gas market'' (two chapters in English
+        of the monograph published in 2014).
+    \end{enumerate}
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%   TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Additional information and skills}
+    \item Theoretical knowledge of and vast experience in solving practical problems
+    in the field of data analysis and machine learning, and in application of numerical
+    algorithms
+
+    \item Experience with architecture and design of advanced Python libraries, software
+    development and release management, and proficiency in Git version control
+
+    \item Efficient solution of applied mathematical and statistical tasks, data analysis
+    and design of numerical experiments in R and/or using the typical Python ML stack
+    (numpy, scipy, matplotlib, scikit-learn)
+
+    \item Necessary skills for designing and developing an industry-grade solution
+    for simulation modelling, statistical estimation, forecasting and analysis of
+    financial time series
+
+    \item Abstract approach to design and problem solving, efficient data visualization
+    and automated data collection
+% Огромное желание решать прикладные задачи в области на стыке математической статистики,
+% моделирования и компьютерных наук, одновременно продолжая расширять кругозор современными
+% методами анализа больших данных и алгоритмами их обработки и численного анализа.
+\end{rSection}
+
+\bigskip
+\begin{rSection}{Technical Strengths}
+    \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+    Computer Languages & Python, SQL, C, R \\
+    Tools & GIT, \LaTeX, MS Office, Eviews \\
+    Databases & Oracle, Teradata, MSSQL
+    \end{tabular}
+
+    Machine Learning and data analysis stack: numpy, scikit-learn, Cython,  % Theano,
+    PyTorch, Tensorflow, pandas etc.
+\end{rSection} \medskip
+
+%----------------------------------------------------------------------------------------
+%   EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
