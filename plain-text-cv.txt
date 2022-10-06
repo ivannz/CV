@@ -1,0 +1,44 @@
+2021-09 2021-11
+2021-09 2022-07
+2022-06 present
+1. Development of the winning solution “Raph” for the NetHack Challenge at the the 2021 NeurIPS competition track, in which a high-level algorithmic state machine controlled lower-level RL sub-policies. Implementation of diagnostic and debug toolbox. Optimization of the algorithmic backend of the solution, including data representation and path finding algorithms. Writing a report on the structure of the solution and the motivation.
+2. Collaboration on the project focused on manager-worker communications for goal-conditioned policies in RL. Researching topics like adaptive computation in deep networks with applications to hierarchical RL, skill discovery and learning hierarchical policies in reinforcement learning, planning via tree search, sender-receiver message generation with discrete latent embeddings, exploration via intrinsic motivation mechanisms. Proposal, implementation and testing of new architectures, including recurrent transformers (MiniHack, NetHack), vector-quantized VAEs for manager-worker communication (ATARI, Minigrid).
+3. Applied research on benefits of machine learning and reinforcement learning to practical combinatorial optimization problems (manpower allocation problem with composite cost structure and quota constraints, CVRP on large road networks). Research planning and management within a small team, implementation of common evaluation criteria, interaction with business partners. Evaluation and study of imitation and DQN approaches to learning to branching heuristics. Experiments and development of neural route generation for CVRP based on graph neural networks.
+
+
+2020-12 2021-09
+Research related to developing a method and pipeline for remote diagnostics of respiratory illnesses using audio recordings of respiratory sounds. Development of bootstrap-based method for evaluation of performance in counterfactual setting, preparation of extensive literature review of machine learning in medical applications and remote diagnostics based on respiratory sound recordings, writing and editing the research paper, consulting the team regarding validation protocols, proposing experimental setups and research questions.
+
+
+2018-09 2018-12
+2019-04 2019-09
+2019-11 2020-06
+2020-05 2020-09
+2020-08 present
+1. Development of a matrix factorization library with temporal  autoregressive regularization for demand and inventory forecasting. Design, validation and implementation of various forecasting approaches, presentation of findings at BigData Conference 2018.
+2. Research and experimentation on neural Digital Signal Predistortion for wireless radio frequency transmitters.
+Implementation of a custom torch-based large scale experimentation framework for rapid prototyping, fast verification and unified reporting. Research, development and evaluation of alternative neural architectures.
+3. Thesis research into Bayesian methods for sparsification of complex-valued neural networks (published at ICML 2020). Implementation of complex-valued neural networks extension to pytorch, with seamless integration onto existing experimental pipelines. Theoretical generalization of variational dropout and automatic relevance determination to complex-valued neural networks based on original research.
+4. Research into generalization of the Deep Weight Prior beyond independent kernel-slice assumption for better few-shot learning. Numerically stable implementation of the Tensor-Ring Induced Prior with extra high number tensor dimensionality. Extensive experimentation with the implicit priors and gradient estimators (IWAE, SGVB).
+5. Thesis research into deep neural network pruning based on the second-order information. Derivation and study of fast procedures for forward and backward greedy pruning based on the Optimal Brain Surgeon and related methods. Derivation of fast numerical methods for matvec, inverse matvec and diagonals for Hessians in implicit ``sandwich'' form. Extensive research into the sub-optimality guarantees for approximate solutions of combinatorial search problems and their relation to the proposed procedure.
+
+
+2016-11 2017-05
+2017-09 2017-11
+2017-11 2017-12
+2018-04 2018-07
+2018-02 2018-06
+2017-06 2017-10
+1. Design and implementation of an early warning system in aerospace industry. Data mining and feature analysis in engine telemetry data, design and implementation of data processing pipeline on small scale AWS EC2 cluster, optimized algorithm for anticipatory binary signal mining (cython).
+2. Detection of anomalous road surface conditions in a
+spatially distributed dataset of micro-meteorological data. Derivation, prototyping, and implementation of a decentralized support vector machine algorithm for ice detection. Reporting the findings with comprehensive comparison and analysis.
+3. Estimation of the effects on the intraday oil futures price from the publication of weekly reports from the US Department of Energy. Statement, design and implementation of the optimization problem for estimation of sparse event effects.
+4. Feasibility research for medium term oil price forecasting with advanced time series analysis and deep learning. Specification of the structure and content of the news stream for neural event embedding model, collection and vetting of economic data for forecasting multivariate oil price time series, preparation of the final report, and presentation of findings.
+5. Thesis research, design, prototyping and implementation of a sparse group lasso regularized matrix completion algorithm with side-channel information, writing and editing the research paper detailing the algorithm, theoretical guarantees, and the findings on practical biomedical tasks (Journal of Computational Mathematics and Mathematical Physics).
+6. Design and development of the differentiable LSB embedding layer for incorporation into Steganographic Generative Adversarial Networks -- GAN with extra steganographic adversary, implementation of correct stego-security validation protocol for the trained GAN, conducting proof-of-concept experiments with simple non-image GANs.
+
+
+2014-03 2015-08
+2013-04 2014-02
+1. Design and implementation of business logic and select database objects for a data warehousing solution during the migration of the database and accounting ledger of a top Russian bank to new corporate record management system.
+2. Architecture, design and development of a statistical computations module for market simulations within a solution for monitoring the financial market by the Central Bank of Russia
