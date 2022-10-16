@@ -1,8 +1,10 @@
+https://scholar.google.ru/citations?user=lF5HI3QAAAAJ
+https://github.com/ivannz
+https://www.linkedin.com/in/ivan-nazarov-236b08138/
+
+
 Research scientist, Artificial Intelligence Research Institute
-2021-09 2021-11
-2021-10 2021-12
-2021-09 2022-07
-2022-06 present
+2021-09 present
 1. the 1st place solution at the NetHack Challenge at the the 2021 NeurIPS competition track (team "Raph", a high-level algorithmic state machine controlling low-level RL sub-policy). Tasks: development of diagnostic and policy debug toolbox, optimization of the algorithmic backend of the solution, including data representation and path finding algorithms, writing and editing a report on the motivation and structure of the solution.
 2. "Interpretable Manager-worker Goal-conditioning in Hierarchical RL". Tasks: research into adaptive computation in deep networks, skill discovery and hierarchical policy learning in RL, learnable messaging with discrete latent embeddings, intrinsic motivation mechanisms for exploration, planning via models or tree search. Implementation and testing of new architectures, including recurrent transformers (MiniHack, NetHack), vector-quantized VAEs for manager-worker communication (ATARI, Minigrid).
 3. "Contrastive Learning for Event Sequences with Self-Supervision" (SIGMOD'22: ICMD). Tasks: improving the papers scientific standing, reinterpeting the experimental results and aligning the discussion with the tested hypothesis, and contributing to rebuttal process.
@@ -15,17 +17,7 @@ Data Science Research Lead, Sberbank AI Lab
 
 
 Machine Learning Research Engineer, Skoltech CDISE
-2016-11 2017-05
-2017-09 2017-11
-2017-11 2017-12
-2018-04 2018-07
-2018-02 2018-06
-2018-09 2018-12
-2017-06 2017-10
-2019-04 2019-09
-2019-11 2020-06
-2020-05 2020-09
-2020-08 present
+2016-09 2020-11
 1. "Early Warning System for Aerospace". Tasks: research into engine telemetry for feature engineering, design and implementation of data processing pipeline on small scale AWS EC2 cluster, optimized algorithm for mining anticipatory binary signals (scikit-learn, cython).
 2. "Detection of Anomalous Road Surface Conditions in Spatially Distributed Micro-meteorological Dataset". Tasks: theoretical extension of the support vector machine problem to a decentralized private-public dataset setup, implementation of this algorithm in CVXOPT, reporting the findings with comprehensive comparison and analysis on toy problems.
 3. "Estimation of the Effects of Weekly US DoE Reports on Intraday Oil Futures". Tasks: development of a convex optimization problem for estimation of sparse event effects, application to real market and report data.
@@ -39,12 +31,8 @@ Machine Learning Research Engineer, Skoltech CDISE
 11. Thesis research on "Hessian-based Method for Precise Neural Network Pruning" -- neural network pruning based on local second-order approximation of the loss surface. Derivation of fast procedures for forward and backward greedy pruning based on the Optimal Brain Surgeon family of methods, and fast procedures for matvec, inverse matvec and diagonals for matrices in implicit "sandwich" form. Extensive research into the sub-optimality of the approximate solutions to the related generalized sparse leading eigenvector problem.
 
 
-Researcher Intern, IITP RAS laboratory 10
+Researcher Intern, Institute for Information Transmission Problems RAS laboratory 10
 2015-08 2016-09
-2015-11 2016-05
-2015-11 2016-04
-2015-04 2015-12
-2016-01 2016-06
 1. "A statistical library for predictive maintenance and early warning systems with applications to aerospace industry". Tasks: implementation of novel data mining algorithms in python-numpy, and doing industrial data analysis with them as part of securing TRL5 certification, writing documentation, and presenting findings.
 2. "A library for long term economic forecasting and simulation for efficient economic planning in coal mining industry". Tasks: development and testing of multivariate heteroskedastic time series macroeconomic model (in R), contributing to the report with description of the underlying econometrics and simulation methodology.
 3. "Online learning algorithms in portfolio composition problem for exchange traded funds". Tasks: research on online learning algorithms and online expert aggregation, implementation of a testbed for strategy evaluation on historical market data, reporting the experimental findings.
@@ -53,8 +41,7 @@ Researcher Intern, IITP RAS laboratory 10
 
 
 Business Analyst, GlowByte Consulting
-2014-03 2015-08
-2013-04 2014-02
+2013-04 2015-08
 1. Design and implementation of business logic and select database objects for a data warehousing solution during the migration of the database and accounting ledger of a top Russian bank to new corporate record management system.
 2. Core developer of a statistical computations module for market simulations within a solution for financial market monitoring for the Central Bank of Russia.
 
