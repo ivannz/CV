@@ -7,7 +7,7 @@ Research scientist, Artificial Intelligence Research Institute
 2021-09 present
 1. the 1st place solution at the NetHack Challenge at the the 2021 NeurIPS competition track (team "Raph", a high-level algorithmic state machine controlling low-level RL sub-policy). Tasks: development of diagnostic and policy debug toolbox, optimization of the algorithmic backend of the solution, including data representation and path finding algorithms, writing and editing a report on the motivation and structure of the solution.
 2. "Interpretable Manager-worker Goal-conditioning in Hierarchical RL". Tasks: research into adaptive computation in deep networks, skill discovery and hierarchical policy learning in RL, learnable messaging with discrete latent embeddings, intrinsic motivation mechanisms for exploration, planning via models or tree search. Implementation and testing of new architectures, including recurrent transformers (MiniHack, NetHack), vector-quantized VAEs for manager-worker communication (ATARI, Minigrid).
-3. "Contrastive Learning for Event Sequences with Self-Supervision" (SIGMOD'22: ICMD). Tasks: improving the papers scientific standing, reinterpeting the experimental results and aligning the discussion with the tested hypothesis, and contributing to rebuttal process.
+3. "Contrastive Learning for Event Sequences with Self-Supervision" (SIGMOD'22: ICMD). Tasks: improving the papers scientific standing, reinterpreting the experimental results and aligning the discussion with the tested hypothesis, and contributing to rebuttal process.
 4. "ML-RL Applications in Industrial Operations Research And General Combinatorial Optimization Problems". Tasks: planning and leading research in a small team, interaction with business partners, evaluation of IL and DQN approaches to learning branching rules in SCIP/Ecole to allocation problem with composite cost structure and quota constraints, experimenting with neural route generation for CVRP on real realistic roadmap networks.
 
 
@@ -16,7 +16,7 @@ Data Science Research Lead, Sberbank AI Lab
 "Project Achoo: a practical model and application for COVID-19 detection from recordings of breath, voice, and cough" (IEEE Journal of Selected Topics in Signal Processing, 2, 2022) -- diagnostics of respiratory illnesses from audio recordings. Tasks: writing and editing the research paper, consulting the team on validation protocols, proposing experimental setups and better research questions. Proposed a bootstrap-based method for counterfactual evaluation of audio recognition, extensively reviewed ML approaches in medical applications and remote diagnostics based on respiratory sounds.
 
 
-Machine Learning Research Engineer, Skoltech CDISE
+Machine Learning Research Engineer, Skolkovo Institute of Science and Technology, CDISE
 2016-09 2020-11
 1. "Early Warning System for Aerospace". Tasks: research into engine telemetry for feature engineering, design and implementation of data processing pipeline on small scale AWS EC2 cluster, optimized algorithm for mining anticipatory binary signals (scikit-learn, cython).
 2. "Detection of Anomalous Road Surface Conditions in Spatially Distributed Micro-meteorological Dataset". Tasks: theoretical extension of the support vector machine problem to a decentralized private-public dataset setup, implementation of this algorithm in CVXOPT, reporting the findings with comprehensive comparison and analysis on toy problems.
